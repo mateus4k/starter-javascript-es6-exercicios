@@ -53,7 +53,7 @@ Github.getRepositories("rocketseat/dslkvmskv");
 
 const buscaUsuario = async usuario => {
   try {
-    const response = await axios.get(`https://api.github.com/users/${user}`);
+    const response = await axios.get(`https://api.github.com/users/${usuario}`);
 
     console.log(response.data);
   } catch (err) {
