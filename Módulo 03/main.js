@@ -25,7 +25,7 @@ async function getUserFromGithub(user) {
 
     console.log(response.data);
   } catch (err) {
-    console.log("Usuário não existe");
+    console.warn("Usuário não existe");
   }
 }
 
@@ -41,12 +41,12 @@ class Github {
 
       console.log(response.data);
     } catch (err) {
-      console.log("Repositório não existe");
+      console.warn("Repositório não existe");
     }
   }
 }
 
-Github.getRepositories("rocketseat/rocketseat.com.br");
+Github.getRepositories("rocketseat/starter-javascript-es6-exercicios");
 Github.getRepositories("rocketseat/dslkvmskv");
 
 // D
@@ -57,7 +57,7 @@ const buscaUsuario = async usuario => {
 
     console.log(response.data);
   } catch (err) {
-    console.log("Usuário não existe");
+    console.warn("Usuário não existe");
   }
 };
 
